@@ -23,7 +23,6 @@ const client = axios.create({
 });
 
 app.post("/subscribe", (req, res) => {
-  console.log(req.body);
   const { email } = req.body;
   client
     .post("https://connect.mailerlite.com/api/subscribers", {
